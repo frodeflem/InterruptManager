@@ -1,0 +1,14 @@
+## Interface: 80300
+## Title: InterruptManager
+## Author: Leksikon
+## Version: 1.69
+## Notes: Easily set up interrupt rotations within a raid or a party.
+## eMail: frode_flodhest@hotmail.com
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariablesPerCharacter: IMDB
+spells.lua
+core.lua
+options.lua
+NewFeatures.lua
+InterruptManager.xml
