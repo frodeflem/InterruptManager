@@ -15,19 +15,19 @@ Note 3: Due to how Blizzard chose to design the functionality of Warlock pet int
 Please comment, post bugs or suggestions at www.curse.com
 # Features
 
-    Bars display the cooldowns of players' interrupt abilities, as well as everyone's position in the rotation.
-    Will warn you when it is your turn to interrupt next.
-    Will warn you when your target/focus begins casting a spell while it is your turn to interrupt.
-    Announces in /say when you use an interrupt ability (can be disabled).
-    Dynamic rotation: places the player with the longest cooldown remaining on their interrupt spell last in the rotation.
-    Availability check: Dead, disconnected or not present players will always be placed in the back of the rotation.
+ - Bars display the cooldowns of players' interrupt abilities, as well as everyone's position in the rotation.
+ - Will warn you when it is your turn to interrupt next.
+ - Will warn you when your target/focus begins casting a spell while it is your turn to interrupt.
+ - Announces in /say when you use an interrupt ability (can be disabled).
+ - Dynamic rotation: places the player with the longest cooldown remaining on their interrupt spell last in the rotation.
+ - Availability check: Dead, disconnected or not present players will always be placed in the back of the rotation.
 
-    Solo Mode: Enable to always be warned when your target begins casting a spell, even if you are not in the queue.
-    PUG mode: Enable if not everyone has the addon installed. You will announce when someone interrupts, and whose turn it is to interrupt next spell.
-    Multi-Rotation support: Different rotation setups within a raid will not interfere with each other.
-    Target/focus support: Track the spellcasts of your target, focus or both.
+ - Solo Mode: Enable to always be warned when your target begins casting a spell, even if you are not in the queue.
+ - PUG mode: Enable if not everyone has the addon installed. You will announce when someone interrupts, and whose turn it is to interrupt next spell.
+ - Multi-Rotation support: Different rotation setups within a raid will not interfere with each other.
+ - Target/focus support: Track the spellcasts of your target, focus or both.
 
 # Todo:
 
-    Bars should display other conditions that cause players to be unable to interrupt.
+ - Bars should display other conditions that cause players to be unable to interrupt.
 
