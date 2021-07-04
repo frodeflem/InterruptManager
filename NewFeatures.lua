@@ -487,7 +487,7 @@ end
 
 function IM:OpenFeatureDescriptionWindow()
     if (not InterruptManagerNewFeaturesDescriptionWindow) then
-        local f = CreateFrame("Frame", "InterruptManagerNewFeaturesDescriptionWindow", InterruptManagerNewFeatures)
+        local f = CreateFrame("Frame", "InterruptManagerNewFeaturesDescriptionWindow", InterruptManagerNewFeatures, BackdropTemplateMixin and "BackdropTemplate")
         f:SetFrameLevel(3)
         f:SetBackdrop({
             bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
@@ -529,7 +529,7 @@ end
 function IM:OpenNewFeaturesWindow()
     -- Configuration box
     if (not InterruptManagerNewFeatures) then
-        local f = CreateFrame("Frame", "InterruptManagerNewFeatures", InterruptManagerConfig)
+        local f = CreateFrame("Frame", "InterruptManagerNewFeatures", InterruptManagerConfig, BackdropTemplateMixin and "BackdropTemplate")
         f:SetHeight(490)
         f:SetWidth(300)
         f:SetPoint("CENTER", InterruptManagerConfig, "CENTER", 300, 0)
@@ -548,7 +548,7 @@ function IM:OpenNewFeaturesWindow()
         f.scrollLevel = 0
         
         -- Configuration box title
-        f = CreateFrame("Frame")
+        f = CreateFrame("Frame", nil, nil, BackdropTemplateMixin and "BackdropTemplate")
         f:SetHeight(30)
         f:SetWidth(200)
         f:SetPoint("CENTER", InterruptManagerNewFeatures, "TOP", 0, -15)
