@@ -719,13 +719,13 @@ function IM_COMBAT_LOG_EVENT_UNFILTERED()
     
     if (event == "SPELL_CAST_SUCCESS") then
         if (tContains(interruptSpells.spellId, spellId)) then
-            -- If an interrupt spell was cast
-            IM:InterruptUsed(sourceName, spellId)
-            
             -- Announce my interrupt
             if (sourceGUID == UnitGUID("player") and IMDB.announce) then
                 IM:AnnounceMyInterrupt(spellName)
             end
+
+            -- If an interrupt spell was cast
+            IM:InterruptUsed(sourceName, spellId)
         end
     end
 end
