@@ -1,7 +1,7 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: InterruptManager
 ## Author: Leksikon
-## Version: 1.69
+## Version: 1.72
 ## Notes: Easily set up interrupt rotations within a raid or a party.
 ## eMail: frode_flodhest@hotmail.com
 ## DefaultState: Enabled
