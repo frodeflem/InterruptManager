@@ -125,7 +125,7 @@ function IM:CreateConfig(dontHide)
 
     -- Configuration box
     PlaySound(839)
-    local f = CreateFrame("Frame", "InterruptManagerConfig")
+    local f = CreateFrame("Frame", "InterruptManagerConfig", nil, BackdropTemplateMixin and "BackdropTemplate")
     local height = 370 + IMDB.maxInterrupters*30
     f:SetHeight(height)
     f:SetWidth(300)
@@ -147,7 +147,7 @@ function IM:CreateConfig(dontHide)
     tinsert(UISpecialFrames, f:GetName())
     
     -- Configuration box title
-    local f = CreateFrame("Frame")
+    local f = CreateFrame("Frame", nil, nil, BackdropTemplateMixin and "BackdropTemplate")
     f:SetHeight(30)
     f:SetWidth(200)
     f:SetPoint("CENTER", "InterruptManagerConfig", "TOP", 0, -15)
@@ -629,7 +629,7 @@ function IM:CreateEditbox(name, parent)
         print(language)
     end
 
-    local f = CreateFrame("Editbox", name, parent)
+    local f = CreateFrame("Editbox", name, parent, BackdropTemplateMixin and "BackdropTemplate")
     f:SetFontObject(GameFontNormal)
     f:SetFrameLevel(2)
     f:SetBackdrop({
